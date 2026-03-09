@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pth
+*.whl
+miniconda.sh
+data/
+.DS_Store
