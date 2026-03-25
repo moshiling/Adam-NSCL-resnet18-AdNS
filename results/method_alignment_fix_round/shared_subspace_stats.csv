@@ -1,0 +1,3 @@
+mode,description
+overlap_core,"default in current round; builds shared basis from U_pre^T U_cur overlap SVD and thresholded canonical overlap directions"
+union_lowrank,"fallback only; concat+orth+svd compression retained for ablation/backward compatibility"

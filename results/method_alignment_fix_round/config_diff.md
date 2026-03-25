@@ -1,0 +1,31 @@
+**Config Diff**
+- 新增 `shared_subspace_mode: union_lowrank | overlap_core`
+- 新增 `shared_overlap_threshold`
+- `sfcl` / `sfcl_adns` 配置文件现在都会把以下字段显式写出：
+  - `projection_mode`
+  - `sfcl_tau1`
+  - `sfcl_tau2`
+  - `sfcl_norm_projection`
+  - `use_shared_lowrank`
+  - `shared_rank_mode`
+  - `shared_rank_ratio`
+  - `shared_subspace_mode`
+  - `shared_overlap_threshold`
+  - `safe_boost`
+  - `risk_shrink`
+  - `use_task_strength`
+  - `alpha_min`
+  - `alpha_max`
+  - `alpha_schedule`
+  - `use_rho_t`
+  - `rho_min`
+  - `rho_max`
+  - `use_intra_task_distill`
+  - `teacher_warmup_epochs`
+  - `beta_distill`
+  - `tau_distill`
+
+**Behavioral Diff**
+- `sfcl_adns` 默认 shared-subspace 现在更偏“交叠核心”而不是“并集低秩压缩”。
+- scheduler 语义修正后，首个 LR step 不再被旧调用方式跳过。
+- KD 和 loss breakdown 现在有显式落盘证据。

@@ -1,0 +1,23 @@
+**Progress Overview**
+- 当前状态: `C`
+- 已完成正式主结果:
+  - `sfcl_full80_seed0_fixed`
+  - `nscl_full80_seed0_fixed_v2`
+  - `sfcl_adns_full80_seed0_fixed_v3_gpu1`
+- 已完成 smoke / resume:
+  - `method_alignment_smoke_sfcl_fixed`
+  - `method_alignment_smoke_sfcl_adns_fixed_v3_gpu1`
+  - `resume_check_shared_subspace_fixed`
+- 已识别为不完整、仅保留目录参考:
+  - `nscl_full80_seed0_fixed`
+  - `sfcl_adns_full80_seed0_fixed`
+  - `method_alignment_smoke_sfcl_adns_fixed`
+- 正在补的未完成部分:
+  - `sfcl_adns_union_lowrank_full80_seed0`
+  - 2026-03-24 12:36 已重新接管并在 `GPU 6` 上续跑
+  - 当前进程链路已确认存在: `conda run -> python3 main.py`
+  - 当前输出目录: `/home/moshiling/Adam-NSCL-resnet18+AdNS /Adam-NSCL-main/results/final_repro_round/sfcl_adns_union_lowrank_full80_seed0`
+  - 当前 stdout 日志: `/home/moshiling/Adam-NSCL-resnet18+AdNS /Adam-NSCL-main/results/final_repro_round/sfcl_adns_union_lowrank_full80_seed0/stdout_gpu6.log`
+  - 当前已完成到 task 4，最近已落盘中间指标: `avg_acc=66.05`, `bwt=-25.633333333333336`
+- `overlap_core` 对照臂:
+  - 使用配置等价的 `sfcl_adns_full80_seed0_fixed_v3_gpu1`

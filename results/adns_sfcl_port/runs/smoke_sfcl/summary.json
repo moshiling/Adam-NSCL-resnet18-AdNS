@@ -1,0 +1,32 @@
+{
+  "run_name": "smoke_sfcl",
+  "run_dir": "/home/moshiling/Adam-NSCL-resnet18+AdNS /Adam-NSCL-main/results/adns_sfcl_port/runs/smoke_sfcl",
+  "projection_mode": "sfcl",
+  "task_order": [
+    "1",
+    "2"
+  ],
+  "acc_table": {
+    "1": {
+      "1": 20.58,
+      "2": 23.82
+    },
+    "2": {
+      "2": 25.42
+    }
+  },
+  "avg_acc_history": [
+    20.58,
+    24.62
+  ],
+  "bwt_history": [
+    0,
+    3.240000000000002
+  ],
+  "final_avg_acc": 24.62,
+  "final_bwt": 3.240000000000002,
+  "seed": 0,
+  "gpuid": [
+    3
+  ]
+}

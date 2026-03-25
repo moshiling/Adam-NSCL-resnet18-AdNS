@@ -1,0 +1,9 @@
+experiment,status,source,projection_mode,task_scope,subset_samples,acc,bwt,notes
+historical_nscl_baseline,completed,history,nscl,10_tasks,full,73.37,-1.644444444444441,from /home/moshiling/Adam-NSCL-resnet18+AdNS /train_thres_10.log
+sfcl_quick10_seed0,completed,previous_round,sfcl,10_tasks,full,43.17,-1.0111111111111104,schedule=1 quick validation
+sfcl_adns_quick10_seed0,completed,previous_round,sfcl_adns,10_tasks,full,48.37,-9.644444444444446,schedule=1 quick validation
+smoke_resume_check_v3,completed,previous_round,sfcl_adns,10_tasks,full,,,resume path previously verified after scheduler-state fix
+method_alignment_smoke_sfcl,started,current_round,sfcl,10_tasks,full,,,new-round full smoke launched under results/method_alignment_fix_round/runs
+method_alignment_smoke_sfcl_adns,started,current_round,sfcl_adns,10_tasks,full,,,new-round full smoke launched under results/method_alignment_fix_round/runs
+method_alignment_smoke_sfcl_subset2,started,current_round,sfcl,2_tasks,256,,,subset smoke helper launched for faster end-to-end validation
+method_alignment_smoke_sfcl_adns_subset2,started,current_round,sfcl_adns,2_tasks,256,,,subset smoke helper launched for faster end-to-end validation

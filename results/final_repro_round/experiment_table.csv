@@ -1,0 +1,14 @@
+exp_name,mode,shared_subspace_mode,seed,status,result_source,acc,bwt,notes
+historical_nscl_baseline,nscl,,0,completed,historical_reference,73.37,-1.644444444444441,来自 train_thres_10.log
+nscl_full80_seed0_fixed,nscl,,0,incomplete,new_run,,,目录存在但结果不完整
+nscl_full80_seed0_fixed_v2,nscl,overlap_core,0,completed,new_run,72.95000000000002,-1.8000000000000018,当前正式 nscl 主结果
+sfcl_full80_seed0_fixed,sfcl,overlap_core,0,completed,new_run,74.25,-4.477777777777779,当前正式 sfcl 主结果
+sfcl_adns_full80_seed0_fixed,sfcl_adns,overlap_core,0,incomplete,new_run,,,目录存在但结果不完整
+sfcl_adns_full80_seed0_fixed_v2,sfcl_adns,overlap_core,0,completed,new_run,49.51,-40.900000000000006,正式 adns 结果
+sfcl_adns_full80_seed0_fixed_v3_gpu1,sfcl_adns,overlap_core,0,completed,new_run,49.51,-40.900000000000006,GPU1 复现结果
+sfcl_adns_overlap_core_full80_seed0,sfcl_adns,overlap_core,0,completed,equivalent_config,49.51,-40.900000000000006,使用与 overlap_core 配置等价的 sfcl_adns_full80_seed0_fixed_v3_gpu1
+sfcl_adns_union_lowrank_full80_seed0,sfcl_adns,union_lowrank,0,running,resumed,,,2026-03-24 12:36 接管并切到 GPU6 续跑；当前已完成到 task4
+method_alignment_smoke_sfcl_fixed,sfcl,overlap_core,0,completed,new_run,19.53125,0.0,标准命名 fixed smoke
+method_alignment_smoke_sfcl_adns_fixed,sfcl_adns,overlap_core,0,incomplete,new_run,,,旧 fixed smoke 未完成
+method_alignment_smoke_sfcl_adns_fixed_v3_gpu1,sfcl_adns,overlap_core,0,completed,new_run,19.53125,0.0,GPU1 smoke
+resume_check_shared_subspace_fixed,sfcl_adns,overlap_core,0,completed,resumed,19.53125,0.0,基于修正后 checkpoint 的 resume 检查

@@ -1,0 +1,7 @@
+exp_name,projection_mode,shared_subspace_mode,use_shared_lowrank,use_task_strength,use_intra_task_distill,seed,acc,bwt,status,result_source,notes
+nscl_full80_seed0_fixed_v2,nscl,,false,false,false,0,72.95000000000002,-1.8000000000000018,completed,reference_baseline,修正后正式参考结果
+sfcl_full80_seed0_fixed,sfcl,,false,false,false,0,74.25,-4.477777777777779,completed,reference_baseline,修正后正式参考结果
+union_shared_only_full80_seed0,sfcl_adns,union_lowrank,true,false,false,0,74.36,-3.5111111111111137,completed,resumed,shared-only；原 GPU0 停滞后从 task_06.pt 恢复到 GPU5 并最终完成
+union_shared_taskstrength_full80_seed0,sfcl_adns,union_lowrank,true,true,false,0,38.88,-53.888888888888886,completed,new_run,task_strength-only；性能显著恶化
+union_shared_kd_full80_seed0,sfcl_adns,union_lowrank,true,false,true,0,74.0,-2.2333333333333343,completed,new_run,KD-only；最终已完成
+union_shared_taskstrength_kd_full80_seed0,sfcl_adns,union_lowrank,true,true,true,0,52.44,-37.53333333333333,completed,historical_formal_result,E4 复用上一轮完整 union_lowrank 正式结果 sfcl_adns_union_lowrank_full80_seed0

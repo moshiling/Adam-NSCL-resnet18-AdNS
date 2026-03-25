@@ -1,7 +1,23 @@
 __pycache__/
 *.pyc
 *.pth
+*.pt
 *.whl
 miniconda.sh
 data/
 .DS_Store
+
+# Large experiment artifacts
+log/
+results/**/checkpoints/
+results/**/tensorboard/
+results/**/*.jsonl
+results/**/teacher_warmup_metrics_task_*.json
+results/**/run*.log
+results/**/stdout*.log
+
+# Keep lightweight reports and summaries under results/
+!results/**/*.md
+!results/**/*.csv
+!results/**/summary.json
+!results/**/config_resolved.json

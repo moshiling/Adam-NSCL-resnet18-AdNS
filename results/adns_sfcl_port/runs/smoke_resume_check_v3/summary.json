@@ -1,0 +1,32 @@
+{
+  "run_name": "smoke_resume_check_v3",
+  "run_dir": "/home/moshiling/Adam-NSCL-resnet18+AdNS /Adam-NSCL-main/results/adns_sfcl_port/runs/smoke_resume_check_v3",
+  "projection_mode": "sfcl_adns",
+  "task_order": [
+    "1",
+    "2"
+  ],
+  "acc_table": {
+    "1": {
+      "1": 20.58,
+      "2": 23.8
+    },
+    "2": {
+      "2": 30.52
+    }
+  },
+  "avg_acc_history": [
+    20.58,
+    27.16
+  ],
+  "bwt_history": [
+    0,
+    3.2200000000000024
+  ],
+  "final_avg_acc": 27.16,
+  "final_bwt": 3.2200000000000024,
+  "seed": 0,
+  "gpuid": [
+    7
+  ]
+}

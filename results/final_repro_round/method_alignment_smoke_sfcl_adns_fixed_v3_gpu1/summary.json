@@ -1,0 +1,35 @@
+{
+  "run_name": "method_alignment_smoke_sfcl_adns_fixed_v3_gpu1",
+  "run_dir": "/home/moshiling/Adam-NSCL-resnet18+AdNS /Adam-NSCL-main/results/final_repro_round/method_alignment_smoke_sfcl_adns_fixed_v3_gpu1",
+  "projection_mode": "sfcl_adns",
+  "task_order": [
+    "1",
+    "2"
+  ],
+  "acc_table": {
+    "1": {
+      "1": 39.0625,
+      "2": 39.0625
+    },
+    "2": {
+      "2": 0.0
+    }
+  },
+  "avg_acc_history": [
+    39.0625,
+    19.53125
+  ],
+  "bwt_history": [
+    0,
+    0.0
+  ],
+  "final_avg_acc": 19.53125,
+  "final_bwt": 0.0,
+  "seed": 0,
+  "gpuid": [
+    1
+  ],
+  "limited_tasks": 2,
+  "subset_smoke_samples": 256,
+  "resume_checkpoint": null
+}

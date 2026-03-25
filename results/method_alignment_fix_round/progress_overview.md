@@ -1,0 +1,17 @@
+**Progress**
+- 源码一致性审计: 完成
+- shared overlap-core 修正: 完成
+- sfcl_adns 软投影主干校验: 完成
+- rho_t 接线校验: 完成
+- KD 端到端接线与落盘: 完成
+- scheduler 调用修正: 完成
+- 历史 baseline 参数恢复: 完成
+- subset smoke 脚本: 完成
+- 本轮 smoke / resume:
+  - 已启动 `method_alignment_smoke_sfcl*` 与 `method_alignment_smoke_sfcl_adns*`
+  - 受当前环境并行长跑与 Python 文件锁竞争影响，部分新跑仍在进行
+  - 可直接复用的已完成验证证据包括：
+    - 历史 baseline `train_thres_10.log`
+    - 上一轮真实新跑 `sfcl_quick10_seed0`
+    - 上一轮真实新跑 `sfcl_adns_quick10_seed0`
+    - `smoke_resume_check_v3` 的 checkpoint/resume 成功记录
